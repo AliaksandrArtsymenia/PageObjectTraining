@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="Console">
+            <PatternLayout>
+                <Pattern>%d %p %c{2} [%t] %l %m%n</Pattern>
+            </PatternLayout>
+        </Console>
+        <File name="File" fileName="output.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m %ex%n</Pattern>
+            </PatternLayout>
+        </File>
+        <ReportPortalLog4j2Appender name="ReportPortalLog4j2Appender">
+                    <PatternLayout>
+                        <Pattern>%d %p %c{2} [%t] %l %m%n</Pattern>
+                    </PatternLayout>
+                </ReportPortalLog4j2Appender>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+            <AppenderRef ref="ReportPortalLog4j2Appender"/>
+        </Root>
+    </Loggers>
+</Configuration>

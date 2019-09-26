@@ -1,0 +1,34 @@
+# Compiled class file
+*.class
+**/.idea
+**/.class
+**/bin
+**/target
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings
+allure-results/
+
+# Log file
+*.log
+
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# SonarCube scanner
+.scannerwork
+.sonar
+test data for merge
